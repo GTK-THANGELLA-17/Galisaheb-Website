@@ -3,6 +3,7 @@ import { Heart, Activity, Award, Zap, Flame, RefreshCw } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+
 const Services: React.FC = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -14,37 +15,37 @@ const Services: React.FC = () => {
       icon: <Activity className="w-6 h-6 text-teal-600" />,
       title: "Sports Massage",
       description: "Specialized techniques for muscle recovery and performance enhancement.",
-      image: "/images/sports-massage.jpg"
+      image: "/public/images/sports-massage.jpg"
     },
     {
       icon: <Zap className="w-6 h-6 text-teal-600" />,
       title: "Deep Tissue Massage",
       description: "Targeting chronic muscle tension and deep-seated knots.",
-      image: "/images/deep-tissue-massage.jpg"
+      image: "/public/images/deep-tissue-massage.jpg"
     },
     {
       icon: <RefreshCw className="w-6 h-6 text-teal-600" />,
       title: "Recovery Therapy",
       description: "Post-workout recovery and injury rehabilitation techniques.",
-      image: "/images/recovery-therapy.jpg"
+      image: "/public/images/recovery-therapy.jpg"
     },
     {
       icon: <Flame className="w-6 h-6 text-teal-600" />,
       title: "Therapeutic Massage",
       description: "Relief from chronic pain and muscle stiffness.",
-      image: "/images/therapeutic-massage.jpg"
+      image: "/public/images/therapeutic-massage.jpg"
     },
     {
       icon: <Award className="w-6 h-6 text-teal-600" />,
       title: "Posture Correction",
       description: "Techniques to improve posture and reduce related pain.",
-      image: "/images/posture-correction.jpg"
+      image: "/public/images/posture-correction.jpg"
     },
     {
       icon: <Heart className="w-6 h-6 text-teal-600" />,
       title: "Stress Relief",
       description: "Relaxation techniques to reduce stress and tension.",
-      image: "/images/stress-relief.jpg"
+      image: "/public/images/stress-relief.jpg"
     }
   ];
   
