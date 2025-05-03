@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
             <Award className="h-8 w-8 text-teal-600" />
             <div>
               <span className="text-teal-600">D. Galisaheb</span>
-              <p className="text-sm font-normal text-gray-600">Massage & Physiotherapy</p>
+              <p className="text-sm font-normal text-gray-600">Star Sports Massage Den</p>
             </div>
           </motion.a>
 
