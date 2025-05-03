@@ -15,13 +15,13 @@ const Services: React.FC = () => {
       icon: <Activity className="w-6 h-6 text-teal-600" />,
       title: "Sports Massage",
       description: "Specialized techniques for muscle recovery and performance enhancement.",
-      image: "/public/images/sports-massage.jpg"
+      image: "/images/sports-massage.jpg"
     },
     {
       icon: <Zap className="w-6 h-6 text-teal-600" />,
       title: "Deep Tissue Massage",
       description: "Targeting chronic muscle tension and deep-seated knots.",
-      image: "/public/images/deep-tissue-massage.jpg"
+      image: "/images/deep-tissue-massage.jpg"
     },
     {
       icon: <RefreshCw className="w-6 h-6 text-teal-600" />,
