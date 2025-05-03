@@ -16,21 +16,21 @@ const Testimonials: React.FC = () => {
       role: "IT Professional",
       content: "I had been suffering from lower back pain for months. After just three sessions with D. Galisaheb, I felt a significant improvement. His expertise in physiotherapy techniques made a huge difference.",
       rating: 5,
-      image: "/public/smile.jpg"
+      image: "/smile.jpg"
     },
     {
       name: "Sai",
       role: "Business man",
       content: "Body maintenance is crucial for me. D. Galisaheb's massage therapy helps me stay flexible and pain-free. I appreciate that he comes to my home, making it super convenient.",
       rating: 5,
-      image: "/public/smile.jpg"
+      image: "/smile.jpg"
     },
     {
       name: "Kumar",
       role: "IT software",
       content: "D. Galisaheb's deep tissue massage and physiotherapy sessions have been essential in my marathon training. His techniques help me recover faster and prevent injuries. Highly recommended!",
       rating: 5,
-      image: "/public/smile.jpg"
+      image: "/smile.jpg"
     }
   ];
 

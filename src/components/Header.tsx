@@ -63,7 +63,7 @@ const Header: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <img 
-                src="/public/massage.jpg" 
+                src="/massage.jpg" 
                 alt="Therapeutic Massage" 
                 className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <img 
-                src="/public/massage 1.jpg" 
+                src="/massage 1.jpg" 
                 alt="Professional Physiotherapy" 
                 className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
