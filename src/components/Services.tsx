@@ -21,7 +21,7 @@ const Services: React.FC = () => {
       icon: <Zap className="w-6 h-6 text-teal-600" />,
       title: "Deep Tissue Massage",
       description: "Targeting chronic muscle tension and deep-seated knots.",
-      image: "./images/deep-tissue-massage.jpg"
+      image: "\Public\images\deep-tissue- massage.jpg"
     },
     {
       icon: <RefreshCw className="w-6 h-6 text-teal-600" />,
