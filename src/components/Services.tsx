@@ -14,37 +14,37 @@ const Services: React.FC = () => {
       icon: <Activity className="w-6 h-6 text-teal-600" />,
       title: "Sports Massage",
       description: "Specialized techniques for muscle recovery and performance enhancement.",
-      image: "/public/images/sports massage.jpg"
+      image: "/sports massage.jpg"
     },
     {
       icon: <Zap className="w-6 h-6 text-teal-600" />,
       title: "Deep Tissue Massage",
       description: "Targeting chronic muscle tension and deep-seated knots.",
-      image: "/Public/images/deep tissue massage.jpg"
+      image: "/deep tissue massage.jpg"
     },
     {
       icon: <RefreshCw className="w-6 h-6 text-teal-600" />,
       title: "Recovery Therapy",
       description: "Post-workout recovery and injury rehabilitation techniques.",
-      image: "/public/images/recovery therapy.jpg"
+      image: "/recovery therapy.jpg"
     },
     {
       icon: <Flame className="w-6 h-6 text-teal-600" />,
       title: "Therapeutic Massage",
       description: "Relief from chronic pain and muscle stiffness.",
-      image: "/public/images/therapeutic massage.jpg"
+      image: "/therapeutic massage.jpg"
     },
     {
       icon: <Award className="w-6 h-6 text-teal-600" />,
       title: "Posture Correction",
       description: "Techniques to improve posture and reduce related pain.",
-      image: "/public/images/posture correction.jpg"
+      image: "/posture correction.jpg"
     },
     {
       icon: <Heart className="w-6 h-6 text-teal-600" />,
       title: "Stress Relief",
       description: "Relaxation techniques to reduce stress and tension.",
-      image: "/public/images/stress relief.jpg"
+      image: "/stress relief.jpg"
     }
   ];
 
