@@ -14,25 +14,26 @@ const Testimonials: React.FC = () => {
     {
       name: "Rajesh Kumar",
       role: "IT Professional",
-      content: "I had been suffering from lower back pain for months. After just three sessions with D. Galisaheb, I felt a significant improvement. His expertise in physiotherapy techniques made a huge difference.",
+      content: "I had been suffering from lower back pain for months. After just three sessions with D.GALISAHEB, I felt a significant improvement. His expertise in physiotherapy techniques made a huge difference.",
       rating: 5,
-      image: "/smile.jpg"
+      image: "/public/smile.jpg"
     },
     {
       name: "Sai",
       role: "Business man",
-      content: "Body maintenance is crucial for me. D. Galisaheb's massage therapy helps me stay flexible and pain-free. I appreciate that he comes to my home, making it super convenient.",
+      content: "Body maintenance is crucial for me. D.GALISAHEB's massage therapy helps me stay flexible and pain-free. I appreciate that he comes to my home, making it super convenient.",
       rating: 5,
-      image: "/smile.jpg"
+      image: "/public/smile.jpg"
     },
     {
       name: "Kumar",
       role: "IT software",
-      content: "D. Galisaheb's deep tissue massage and physiotherapy sessions have been essential in my marathon training. His techniques help me recover faster and prevent injuries. Highly recommended!",
+      content: "D.GALISAHEB's deep tissue massage and physiotherapy sessions have been essential in my marathon training. His techniques help me recover faster and prevent injuries. Highly recommended!",
       rating: 5,
-      image: "/smile.jpg"
+      image: "/public/smile.jpg"
     }
   ];
+
 
   return (
     <section id="testimonials" className="py-20 bg-white">
@@ -44,7 +45,7 @@ const Testimonials: React.FC = () => {
           </h3>
           <p className="mt-6 text-gray-600">
             Don't just take our word for it. Hear from individuals who have experienced the therapeutic 
-            benefits of D. Galisaheb's massage and physiotherapy services.
+            benefits of D.GALISAHEB's massage and physiotherapy services.
           </p>
         </div>
         

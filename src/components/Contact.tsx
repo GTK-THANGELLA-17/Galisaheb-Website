@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
               
               <p className="mt-6 text-gray-600">
                 Have questions or ready to schedule your massage or physiotherapy session? 
-                Reach out to D. Galisaheb directly through any of these channels.
+                Reach out to D.GALISAHEB directly through any of these channels.
               </p>
               
               <div className="mt-10 space-y-6">

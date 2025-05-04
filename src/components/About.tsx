@@ -41,7 +41,7 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-teal-400 rounded-xl"></div>
               <img 
-                src="/massage 2.jpg" 
+                src="/public/massage 2.jpg" 
                 alt="Sports Massage Technique" 
                 className="w-full h-auto rounded-xl shadow-xl relative z-10 hover:transform hover:scale-105 transition-transform duration-300"
               />
@@ -49,7 +49,7 @@ const About: React.FC = () => {
             <div className="relative mt-12">
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-teal-400 rounded-xl"></div>
               <img 
-                src="/massage 3.jpg" 
+                src="/public/massage 3.jpg" 
                 alt="Physiotherapy Session" 
                 className="w-full h-auto rounded-xl shadow-xl relative z-10 hover:transform hover:scale-105 transition-transform duration-300"
               />
@@ -57,7 +57,7 @@ const About: React.FC = () => {
             <div className="relative col-span-2 mt-4">
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-teal-400 rounded-xl"></div>
               <img 
-                src="/massage 4.jpg" 
+                src="/public/massage 4.jpg" 
                 alt="Deep Tissue Massage" 
                 className="w-full h-auto rounded-xl shadow-xl relative z-10 hover:transform hover:scale-105 transition-transform duration-300"
               />
@@ -75,11 +75,11 @@ const About: React.FC = () => {
                 <h2 className="text-sm uppercase tracking-wider text-teal-600 font-semibold">Expert Male Therapist</h2>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mt-4">
-                Meet D. Galisaheb
+                Meet D.GALISAHEB
               </h3>
               
               <p className="mt-6 text-gray-600">
-                With over 3 years of experience in sports massage and physiotherapy, D. Galisaheb specializes in 
+                With over 10 years of experience in sports massage and physiotherapy, D.GALISAHEB specializes in 
                 providing professional massage services exclusively for men, both at Star Sports Massage Den and through 
                 home visits.
               </p>
