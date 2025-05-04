@@ -1,6 +1,6 @@
-export default {
+module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    tailwindcss: {},  // Enables Tailwind CSS to process your styles
+    autoprefixer: {}, // Adds vendor prefixes for better browser compatibility
   },
 };
