@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
               Star Sports <span className="text-teal-600">Massage</span> Den
             </h1>
             <p className="mt-6 text-xl text-gray-600 animate-fade-in-up animation-delay-200">
-              Professional therapeutic services by D.GALISAHEB, available at our center or at your home. 
+              Professional therapeutic services by D.Galisaheb, available at our center or at your home. 
               Exclusive services for men.
             </p>
             

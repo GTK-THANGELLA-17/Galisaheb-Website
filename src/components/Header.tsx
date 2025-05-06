@@ -18,12 +18,12 @@ const Header: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              
+             
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
                 Professional <span className="text-teal-600">Massage</span> & <span className="text-teal-600">Physiotherapy</span>
               </h2>
               <p className="mt-6 text-xl text-gray-600">
-                Expert therapeutic services by D.GALISAHEB, available at our center or at your home. 
+                Expert therapeutic services by D.Galisaheb, available at our center or at your home. 
                 Exclusive services for men.
               </p>
               
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <img 
-                src="/massage.jpg" 
+                src="/images/image1.jpg" 
                 alt="Therapeutic Massage" 
                 className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <img 
-                src="/massage 1.jpg" 
+                src="/images/image2.jpg" 
                 alt="Professional Physiotherapy" 
                 className="rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
               />

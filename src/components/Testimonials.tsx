@@ -17,7 +17,7 @@ const Testimonials: React.FC = () => {
       content:
         "I had been suffering from lower back pain for months. After just three sessions with D.GALISAHEB, I felt a significant improvement. His expertise in physiotherapy techniques made a huge difference.",
       rating: 5,
-      image: "/smile.jpg", // referencing from public folder
+      image: "/images/smile.jpg", // referencing from public folder
     },
     {
       name: "Sai",
@@ -25,7 +25,7 @@ const Testimonials: React.FC = () => {
       content:
         "Body maintenance is crucial for me. D.GALISAHEB's massage therapy helps me stay flexible and pain-free. I appreciate that he comes to my home, making it super convenient.",
       rating: 5,
-      image: "/smile.jpg",
+      image: "/images/smile.jpg",
     },
     {
       name: "Kumar",
@@ -33,9 +33,10 @@ const Testimonials: React.FC = () => {
       content:
         "D.GALISAHEB's deep tissue massage and physiotherapy sessions have been essential in my marathon training. His techniques help me recover faster and prevent injuries. Highly recommended!",
       rating: 5,
-      image: "/smile.jpg",
+      image: "/images/smile.jpg",
     },
   ];
+
 
   return (
     <section id="testimonials" className="py-20 bg-white">
@@ -47,23 +48,23 @@ const Testimonials: React.FC = () => {
           </h3>
           <p className="mt-6 text-gray-600">
             Don't just take our word for it. Hear from individuals who have experienced the therapeutic 
-            benefits of D.GALISAHEB's massage and physiotherapy services.
+            benefits of D. Galisaheb's massage and physiotherapy services.
           </p>
         </div>
-
+        
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <div 
               key={index}
               className="bg-gray-50 p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow relative"
             >
               <div className="absolute -top-5 -right-5 bg-teal-100 p-3 rounded-full">
                 <Quote className="h-6 w-6 text-teal-600" />
               </div>
-
+              
               <div className="flex items-center mb-6">
-                <img
-                  src={testimonial.image}
+                <img 
+                  src={testimonial.image} 
                   alt={testimonial.name}
                   className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-white shadow-md"
                 />
@@ -72,9 +73,9 @@ const Testimonials: React.FC = () => {
                   <p className="text-gray-500 text-sm">{testimonial.role}</p>
                 </div>
               </div>
-
+              
               <p className="text-gray-600 mb-6">"{testimonial.content}"</p>
-
+              
               <div className="flex">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
@@ -83,10 +84,10 @@ const Testimonials: React.FC = () => {
             </div>
           ))}
         </div>
-
+        
         <div className="mt-16 text-center">
-          <a
-            href="#booking"
+          <a 
+            href="#booking" 
             className="px-8 py-4 bg-teal-600 text-white rounded-full font-medium hover:bg-teal-700 transition inline-block"
           >
             Experience It Yourself
