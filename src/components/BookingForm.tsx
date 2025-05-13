@@ -15,10 +15,12 @@ const BookingForm = () => {
     date: "",
     time: "",
     address: "",
+    massageType: "Let the therapist decide",
+    problemAreas: [] as string[],
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -27,15 +29,35 @@ const BookingForm = () => {
     }));
   };
 
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, checked } = e.target;
+    setFormData((prev) => {
+      const updated = checked
+        ? [...prev.problemAreas, value]
+        : prev.problemAreas.filter((item) => item !== value);
+      return { ...prev, problemAreas: updated };
+    });
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const message = `Hello, I would like to book a session.\n\nName: ${formData.name}\nMobile: ${formData.mobile}\nDate: ${formData.date}\nTime: ${formData.time}\nAddress: ${formData.address}`;
+    const message = `Hello, I would like to book a session.
 
-    const whatsappURL = `https://wa.me/919441230736?text=${encodeURIComponent(
-      message
-    )}`;
+Name: ${formData.name}
+Mobile: ${formData.mobile}
+Date: ${formData.date}
+Time: ${formData.time}
+Address: ${formData.address}
+Massage Type: ${formData.massageType}
+${
+  formData.massageType === "Problem Specific"
+    ? `Problem Areas: ${formData.problemAreas.join(", ")}`
+    : ""
+}`;
+
+    const whatsappURL = `https://wa.me/919441230736?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {
       toast({
@@ -52,6 +74,8 @@ const BookingForm = () => {
         date: "",
         time: "",
         address: "",
+        massageType: "Let the therapist decide",
+        problemAreas: [],
       });
     }, 500);
   };
@@ -180,6 +204,49 @@ const BookingForm = () => {
                     />
                   </div>
                 </div>
+
+                {/* Massage Type */}
+                <div className="space-y-2">
+                  <Label htmlFor="massageType">Massage Type</Label>
+                  <select
+                    id="massageType"
+                    name="massageType"
+                    value={formData.massageType}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 rounded-md p-2 dark:bg-gray-700 dark:text-white"
+                  >
+                    <option value="Let the therapist decide">Let the therapist decide</option>
+                    <option value="Problem Specific">Problem Specific</option>
+                  </select>
+                </div>
+
+                {/* Problem Checklist */}
+                {formData.massageType === "Problem Specific" && (
+                  <div className="space-y-2">
+                    <Label>What issues are you facing?</Label>
+                    <div className="grid grid-cols-2 gap-2">
+                      {[
+                        "Back Pain",
+                        "Neck Pain",
+                        "Shoulder Pain",
+                        "Leg Pain",
+                        "Stress",
+                        "General Fatigue",
+                      ].map((problem) => (
+                        <label key={problem} className="flex items-center space-x-2">
+                          <input
+                            type="checkbox"
+                            value={problem}
+                            checked={formData.problemAreas.includes(problem)}
+                            onChange={handleCheckboxChange}
+                            className="accent-brand-700"
+                          />
+                          <span>{problem}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="space-y-2">
                   <Label htmlFor="address">
