@@ -21,11 +21,12 @@ const HealthTips = () => {
         </div>
         
         <Tabs defaultValue="diet" className="w-full max-w-4xl mx-auto" onValueChange={setActiveTab}>
-          <TabsList className="grid grid-cols-3 mb-8">
-            <TabsTrigger value="diet">Diet & Nutrition</TabsTrigger>
-            <TabsTrigger value="massage">Massage Benefits</TabsTrigger>
-            <TabsTrigger value="physio">Physiotherapy</TabsTrigger>
-          </TabsList>
+  <TabsList className="flex flex-col space-y-2 sm:grid sm:grid-cols-3 sm:space-y-0 mb-8">
+    <TabsTrigger value="diet">Diet & Nutrition</TabsTrigger>
+    <TabsTrigger value="massage">Massage Benefits</TabsTrigger>
+    <TabsTrigger value="physio">Physiotherapy</TabsTrigger>
+  </TabsList>
+
           
           <TabsContent value="diet" className="space-y-6">
             <Card className="border dark:border-gray-700">

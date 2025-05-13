@@ -47,6 +47,8 @@ const Navbar = () => {
     }
   };
 
+  const isLightScrolled = isScrolled && theme === "light";
+
   return (
     <nav
       className={cn(
@@ -65,7 +67,12 @@ const Navbar = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <span className="text-2xl font-bold text-white">
+          <span
+            className={cn(
+              "text-2xl font-bold",
+              isLightScrolled ? "text-black" : "text-white"
+            )}
+          >
             D. Galisaheb
           </span>
         </a>
@@ -78,7 +85,7 @@ const Navbar = () => {
               onClick={() => scrollToSection(id)}
               className={cn(
                 "font-medium capitalize transition-colors",
-                isScrolled && theme === "light" ? "text-black" : "text-white",
+                isLightScrolled ? "text-black" : "text-white",
                 "hover:text-white"
               )}
             >
@@ -92,7 +99,7 @@ const Navbar = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="text-white"
+            className={cn(isLightScrolled ? "text-black" : "text-white")}
             onClick={toggleTheme}
             aria-label="Toggle theme"
           >
@@ -105,7 +112,10 @@ const Navbar = () => {
 
           <Button
             variant="ghost"
-            className="md:hidden text-white"
+            className={cn(
+              "md:hidden",
+              isLightScrolled ? "text-black" : "text-white"
+            )}
             onClick={toggleMobileMenu}
             aria-label="Toggle Menu"
             aria-expanded={mobileMenuOpen}
@@ -123,7 +133,10 @@ const Navbar = () => {
         >
           <Button
             variant="ghost"
-            className="absolute top-4 right-4 text-white"
+            className={cn(
+              "absolute top-4 right-4",
+              isLightScrolled ? "text-black" : "text-white"
+            )}
             onClick={toggleMobileMenu}
           >
             ✕
