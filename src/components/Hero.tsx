@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -15,13 +14,33 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center text-white overflow-hidden"
     >
+      {/* Background Layers */}
       <div className="absolute inset-0 bg-brand-800 dark:bg-gray-900 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519824145371-296894a0daa9?q=80&w=1920')] dark:bg-[url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1920')] bg-cover bg-center opacity-40 animate-fade-in"></div>
+        {/* Image Layer */}
+        <div className="absolute inset-0">
+          <img
+            src="/wallpaper 1.jpg"
+            alt="Massage therapy background"
+            className="w-full h-full object-cover opacity-40 animate-fade-in dark:hidden"
+          />
+          <img
+            src="/wallpaper 2.jpg"
+            alt="Massage therapy background dark"
+            className="w-full h-full object-cover opacity-40 animate-fade-in hidden dark:block"
+          />
+           <img
+            src="/wallpaper 3.jpg"
+            alt="Massage therapy background dark"
+            className="w-full h-full object-cover opacity-40 animate-fade-in hidden dark:block"
+          />
         </div>
+
+        {/* Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-brand-900/70 via-brand-800/70 to-brand-700/70 dark:from-gray-900/90 dark:via-gray-800/80 dark:to-gray-800/70"></div>
       </div>
-      
+
+      {/* Foreground Content */}
       <div className="container relative z-10 mt-16">
         <div className="max-w-3xl scroll-reveal">
           <span className="inline-block mb-4 text-gold-400 font-semibold tracking-wider uppercase border-l-4 border-gold-400 pl-2 animate-pulse">
@@ -44,16 +63,18 @@ const Hero = () => {
             >
               Book Your Session
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className={cn(
-                "bg-transparent hover:bg-white/10 text-white border-2 border-white/70 hover:border-white",
-                "transition-all duration-300 font-medium text-base hover:scale-105"
-              )}
-            >
-              <a href="tel:9441230736">Call: 9441230736</a>
-            </Button>
+            <a href="tel:9441230736">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className={cn(
+                  "bg-transparent hover:bg-white/10 text-white border-2 border-white/70 hover:border-white",
+                  "transition-all duration-300 font-medium text-base hover:scale-105"
+                )}
+              >
+                Call: 9441230736
+              </Button>
+            </a>
           </div>
         </div>
 
