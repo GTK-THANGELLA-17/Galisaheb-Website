@@ -1,31 +1,66 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const HealthTips = () => {
   const [activeTab, setActiveTab] = useState("diet");
-  
+
   return (
-    <section id="health-tips" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+    <section
+      id="health-tips"
+      className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900"
+    >
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-block mb-2 px-4 py-1 rounded-full bg-brand-100 dark:bg-brand-900/50 text-brand-800 dark:text-brand-300 font-medium text-sm uppercase tracking-wider">
             Health & Wellness
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 dark:text-white">Health Tips & Wellness Insights</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 dark:text-white">
+            Health Tips & Wellness Insights
+          </h2>
           <p className="text-gray-600 dark:text-gray-300">
-            Knowledge is healing. Explore expert information on diet, massage therapy, and physiotherapy benefits.
+            Knowledge is healing. Explore expert information on diet, massage
+            therapy, and physiotherapy benefits.
           </p>
         </div>
-        
-        <Tabs defaultValue="diet" className="w-full max-w-4xl mx-auto" onValueChange={setActiveTab}>
-  <TabsList className="flex flex-col space-y-2 sm:grid sm:grid-cols-3 sm:space-y-0 mb-8">
-    <TabsTrigger value="diet">Diet & Nutrition</TabsTrigger>
-    <TabsTrigger value="massage">Massage Benefits</TabsTrigger>
-    <TabsTrigger value="physio">Physiotherapy</TabsTrigger>
-  </TabsList>
+
+        <Tabs
+          defaultValue="diet"
+          className="w-full max-w-4xl mx-auto"
+          onValueChange={setActiveTab}
+        >
+          {/* ✅ Responsive TabsList */}
+          <TabsList
+            className={cn(
+              "flex flex-col gap-2",
+              "sm:grid sm:grid-cols-3 sm:gap-0",
+              "mb-8"
+            )}
+          >
+            <TabsTrigger value="diet" className="w-full">
+              Diet & Nutrition
+            </TabsTrigger>
+            <TabsTrigger value="massage" className="w-full">
+              Massage Benefits
+            </TabsTrigger>
+            <TabsTrigger value="physio" className="w-full">
+              Physiotherapy
+            </TabsTrigger>
+          </TabsList>
+
 
           
           <TabsContent value="diet" className="space-y-6">

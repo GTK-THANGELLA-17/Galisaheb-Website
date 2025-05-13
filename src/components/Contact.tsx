@@ -109,19 +109,20 @@ const Contact = () => {
               </div>
               
               <div className="mt-6 text-center">
-                <a 
-                  href="https://goo.gl/maps/NZi1Xy4X9aGRoH9K8" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Button variant="outline" className="border-brand-200 text-brand-800 hover:bg-brand-50 dark:border-brand-800 dark:text-brand-300 dark:hover:bg-brand-900/30">
-                    Get Directions
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
-                      <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
-                    </svg>
-                  </Button>
-                </a>
-              </div>
+  <a 
+    href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=17.3590841,78.5280822" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Button variant="outline" className="border-brand-200 text-brand-800 hover:bg-brand-50 dark:border-brand-800 dark:text-brand-300 dark:hover:bg-brand-900/30">
+      Get Directions
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1">
+        <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
+      </svg>
+    </Button>
+  </a>
+</div>
+
             </div>
           </div>
         </div>
